@@ -1,16 +1,14 @@
 @import url(./banner.css);
 
-body, html{
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
 }
 
-#content{
-  background-color: red;;
-}
-
-#banner {
-  background: url('./restaurant.jpg');
+#content {
+  width: 100%;
+  height: 100%;
 }
