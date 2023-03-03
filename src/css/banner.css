@@ -1,6 +1,13 @@
 #banner {
-  background: url('./restaurant.jpg');
-  max-width: 100vw;
-  opacity: 0.6;
-  background-color: rgba(0,0,0,0.7);
+  background: url('../restaurant.jpg') no-repeat center center fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
 }
