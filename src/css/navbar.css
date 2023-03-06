@@ -9,7 +9,7 @@ ul{
 
 #nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
   float: right;
@@ -21,7 +21,7 @@ ul{
   list-style: none;
   text-transform: capitalize;
   line-height: 25px;
-  margin: 0 15px;
+  margin: 0 50px;
   transition: font-size 0.25s;
   border-bottom: 4px double transparent;
 }
