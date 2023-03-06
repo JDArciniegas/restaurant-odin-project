@@ -18,7 +18,7 @@
 
 h3 {
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--background);
   padding: 15px 25px;
   width: 200px;
   border-style: none none double none;
@@ -34,10 +34,10 @@ h3 {
   font-family: var(--second-font);
   color: var(--white);
   font-size: 60px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--background);
   border-style: none none double none;
   border-color: var(--amber);
-  padding: 20px;
+  padding: 25px 120px;
   border-width: 5px;
 }
 

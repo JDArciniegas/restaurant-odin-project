@@ -4,11 +4,11 @@ const contact = () => {
 
   const name = document.createElement("p");
   name.classList.add("contact-info");
-  name.textContent = "Playa del Sol"
+  name.textContent = "Playa del Sol";
 
   const phoneNumber = document.createElement("p");
   phoneNumber.classList.add("contact-info");
-  phoneNumber.textContent = "123-456-7890"
+  phoneNumber.textContent = "123-456-7890";
 
   const address = document.createElement("p");
   address.classList.add("contact-info");

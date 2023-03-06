@@ -1,5 +1,6 @@
 @import url(./banner.css);
 @import url(./navbar.css);
+@import url(./menu.css);
 @import url(./contact.css);
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates:wght@400;700&display=swap');
 
@@ -16,6 +17,7 @@
   --midnight-green: #003844;
   --amber: #FFbF00;
   --verdigris: #51A3A3;
+  --background: rgba(0, 56, 68, 0.7)
 }
 
 body,

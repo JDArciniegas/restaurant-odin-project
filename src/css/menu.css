@@ -1,0 +1,35 @@
+#menu-container {
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--amber);
+  color: var(--midnight-green);
+  border-radius: 10px;
+  margin: 25px;
+  width: 350px;
+}
+
+.card-tile {
+  background-color: none;
+}
+
+.card-image{
+  border-radius: 10px 10px 0 0;
+}
+
+.card-text{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+  text-transform: capitalize;
+}
+
+
