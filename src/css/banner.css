@@ -11,13 +11,25 @@ h1 {
   font-size: 75px;
   /* background-color: rgba(0,0,0,0.1); */
   backdrop-filter: blur(1px);
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 50px;
   width: 400px;
   border-style: solid none solid none;
-  transition: display 0.25s;
 }
 
-.display-none{
+
+@keyframes slideaway {
+  from {
+    display: block;
+  }
+
+  to {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+
+.display-none {
+  animation: slideaway 200ms;
   display: none;
 }

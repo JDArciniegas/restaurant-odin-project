@@ -44,48 +44,11 @@ const home = () => {
         bannerHeader3.classList.remove("display-none");
         setInterval(() => {
           bannerHeader3.classList.add("display-none");
-          bookNowButton.classList.remove("display-none");
         }, 3000);
       }, 3000);
     }, 3000);
   };
-  // create booking form
-  const bookForm = document.createElement("form");
-  bookForm.classList.add('display-none')
-  const createInput = (type, id) => {
-    let input = document.createElement("input");
-    input.setAttribute("type", type);
-    return input;
-  };
-
-  const dateInput = createInput("date");
-
-  const guestNumber = createInput("number", "guestNumber");
-  guestNumber.setAttribute("placeholder", "Guests Number");
-
-  guestNumber.required;
-
-  const emailInput = createInput("email", "emailInput");
-  emailInput.setAttribute("placeholder", "Enter Email Address");
-  emailInput.required;
-
-  const submitInput = createInput('submit');
-  submitInput.setAttribute('value', 'Book Now')
-  submitInput.classList.add("form-button");
-
-  bookForm.appendChild(dateInput);
-  bookForm.appendChild(guestNumber);
-  bookForm.appendChild(emailInput);
-  bookForm.appendChild(submitInput);
-
-
-  bookNowButton.addEventListener('click', (e) => {
-    e.target.remove()
-    bookForm.classList.remove('display-none');
-  })
-
   updateBannerText();
-  bannerContent.appendChild(bookForm);
   bannerContent.appendChild(bannerTextContainer);
   return bannerContent;
 };
