@@ -51,7 +51,7 @@ const navBar = () => {
   contactNav.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(contactNav);
-    mainContent.textContent = ''
+    mainContent.textContent = "";
     mainContent.appendChild(contact());
   });
 
@@ -65,7 +65,7 @@ const navBar = () => {
 const loadPage = () => {
   const content = document.getElementById("content");
   content.appendChild(navBar());
-  content.appendChild(mainContent)
+  content.appendChild(mainContent);
 };
 
 document.body.appendChild(loadPage());

@@ -1,10 +1,10 @@
-ul{
-  background-color: var(--midnight-green);
+ul {
   display: flex;
+  width: 100%;
+  background-color: var(--midnight-green);
   margin: 0;
   color: var(--amber);
-  position: sticky;
-  top: 0;
+  height: 60px;
 }
 
 #nav-container {
@@ -17,16 +17,16 @@ ul{
   margin-left: auto;
 }
 
-.nav-item{
+.nav-item {
   list-style: none;
   text-transform: capitalize;
-  line-height: 25px;
+  line-height: 30px;
   margin: 0 50px;
   transition: font-size 0.25s;
   border-bottom: 4px double transparent;
 }
 
-.nav-item:hover{
+.nav-item:hover {
   font-size: 1.1rem;
   border-bottom: 4px double var(--verdigris);
 }
