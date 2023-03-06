@@ -1,4 +1,5 @@
 @import url(./banner.css);
+@import url(./navbar.css);
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates:wght@400;700&display=swap');
 
 :root {
@@ -20,8 +21,8 @@ body,
 html {
   margin: 0px;
   padding: 0px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   font-family: var(--main-font) !important;
 }
 

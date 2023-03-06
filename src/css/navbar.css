@@ -1,0 +1,31 @@
+ul{
+  background-color: var(--midnight-green);
+  display: flex;
+  margin-top: 0;
+  color: var(--verdigris);
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  float: right;
+  padding: 20px;
+  margin-left: auto;
+  position: sticky;
+}
+
+.nav-item{
+  list-style: none;
+  text-transform: capitalize;
+  line-height: 25px;
+  padding: 0 15px;
+  margin: 0 5px;
+  transition: font-size 0.25s;
+}
+
+.nav-item:hover{
+  font-size: 1.1rem;
+  background-color: blue;
+}
