@@ -3,33 +3,47 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-h1 {
-  color: white;
-  font-size: 75px;
-  /* background-color: rgba(0,0,0,0.1); */
-  backdrop-filter: blur(1px);
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 50px;
-  width: 400px;
-  border-style: solid none solid none;
+#banner-text-container{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  height: 100%;
 }
 
+h3 {
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 25px 50px;
+  width: 200px;
+  border-style: none none double none;
+  transition: opacity 0.25s;
+  border-radius: 0 2px 2px 0;
+  border-width: 5px;
+  border-color: var(--amber);
+  color: var(--white);
+}
 
-@keyframes slideaway {
-  from {
-    display: block;
-  }
-
-  to {
-    transform: translateY(40px);
-    opacity: 0;
-  }
+#mainText {
+  align-self: flex-end;
+  font-family: var(--second-font);
+  color: var(--white);
+  font-size: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-style: none none double none;
+  border-color: var(--amber);
+  padding: 20px;
+  border-width: 5px;
 }
 
 .display-none {
-  animation: slideaway 200ms;
-  display: none;
+  opacity: 0;
+}
+
+.endPeriod {
+  color: var(--amber)
 }

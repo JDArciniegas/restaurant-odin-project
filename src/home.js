@@ -9,46 +9,52 @@ const home = () => {
   // add content to h1 inside banner
   const bannerTextContainer = document.createElement("div");
   bannerTextContainer.setAttribute("id", "banner-text-container");
-  const endPeriod = document.createElement("span");
+  let endPeriod = document.createElement("span");
   endPeriod.textContent = ".";
-  endPeriod.classList.add("endPeriod");
 
-  const bannerHeader1 = document.createElement("h1");
-  bannerHeader1.textContent = `Eat${endPeriod.textContent}`;
+  const bannerHeader1 = document.createElement("h3");
+  bannerHeader1.innerHTML = `Eat<span class="endPeriod">${endPeriod.textContent}</span>`;
 
-  const bannerHeader2 = document.createElement("h1");
+  const bannerHeader2 = document.createElement("h3");
   bannerHeader2.classList.add("display-none");
-  bannerHeader2.textContent = `Play${endPeriod.textContent}`;
+  bannerHeader2.innerHTML = `Play<span class="endPeriod">${endPeriod.textContent}</span>`;
 
-  const bannerHeader3 = document.createElement("h1");
+  const bannerHeader3 = document.createElement("h3");
   bannerHeader3.classList.add("display-none");
-  bannerHeader3.textContent = `Live${endPeriod.textContent}`;
-
-  const bookNowButton = document.createElement("button");
-  bookNowButton.textContent = "Book Now";
-  bookNowButton.classList.add("display-none");
-  bookNowButton.classList.add("form-button");
+  bannerHeader3.innerHTML = `Live<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   // create time delay fucntion
   const updateBannerText = () => {
     bannerTextContainer.appendChild(bannerHeader1);
     bannerTextContainer.appendChild(bannerHeader2);
     bannerTextContainer.appendChild(bannerHeader3);
-    bannerTextContainer.appendChild(bookNowButton);
-
-    setInterval(() => {
+    setTimeout(() => {
       bannerHeader1.classList.add("display-none");
       bannerHeader2.classList.remove("display-none");
-      setInterval(() => {
-        bannerHeader2.classList.add("display-none");
-        bannerHeader3.classList.remove("display-none");
-        setInterval(() => {
-          bannerHeader3.classList.add("display-none");
-        }, 3000);
-      }, 3000);
-    }, 3000);
+    }, 2000);
+
+    setTimeout(() => {
+      bannerHeader2.classList.add("display-none");
+      bannerHeader3.classList.remove("display-none");
+    }, 4000);
+
+    setTimeout(() => {
+      bannerHeader3.classList.add("display-none");
+    }, 6000);
+
   };
+
+  const displayTextBanner = () => {
+    const mainBannerText = document.createElement("h1");
+    mainBannerText.setAttribute("id", "mainText");
+    mainBannerText.innerHTML = `Welcome to Playa del Sol<span class="endPeriod">${endPeriod.textContent}</span>`;
+    bannerContent.appendChild(mainBannerText);
+  };
+
   updateBannerText();
+  setTimeout(() => {
+    displayTextBanner();
+  }, 6000);
   bannerContent.appendChild(bannerTextContainer);
   return bannerContent;
 };

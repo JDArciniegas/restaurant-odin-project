@@ -1,11 +1,29 @@
 @import url(./banner.css);
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat+Alternates:wght@400;700&display=swap');
+
+:root {
+  /* fonts */
+  --main-font: 'Montserrat Alternates',
+    sans-serif;
+  --second-font: 'Great Vibes',
+    cursive;
+  --header-font-weight: 700;
+  --content-font-weight: 400;
+  /* color pallete */
+  --white: #F7FFF7;
+  --midnight-green: #003844;
+  --amber: #FFbF00;
+  --verdigris: #51A3A3;
+}
+
 
 body,
 html {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   width: 100vw;
   height: 100vh;
+  font-family: var(--main-font) !important;
 }
 
 #content {
