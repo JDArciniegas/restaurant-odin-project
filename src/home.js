@@ -41,14 +41,13 @@ const home = () => {
     setTimeout(() => {
       bannerHeader3.classList.add("display-none");
     }, 6000);
-
   };
 
   const displayTextBanner = () => {
     const mainBannerText = document.createElement("h1");
     mainBannerText.setAttribute("id", "mainText");
     mainBannerText.innerHTML = `Welcome to Playa del Sol<span class="endPeriod">${endPeriod.textContent}</span>`;
-    bannerContent.appendChild(mainBannerText);
+      bannerContent.appendChild(mainBannerText);
   };
 
   updateBannerText();
