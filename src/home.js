@@ -15,11 +15,11 @@ const home = () => {
   bannerHeader1.innerHTML = `Eat<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   const bannerHeader2 = document.createElement("h3");
-  bannerHeader2.classList.add("display-none");
+  bannerHeader2.classList.add("opacity-none");
   bannerHeader2.innerHTML = `Play<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   const bannerHeader3 = document.createElement("h3");
-  bannerHeader3.classList.add("display-none");
+  bannerHeader3.classList.add("opacity-none");
   bannerHeader3.innerHTML = `Live<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   // create time delay fucntion
@@ -28,17 +28,17 @@ const home = () => {
     bannerTextContainer.appendChild(bannerHeader2);
     bannerTextContainer.appendChild(bannerHeader3);
     setTimeout(() => {
-      bannerHeader1.classList.add("display-none");
-      bannerHeader2.classList.remove("display-none");
+      bannerHeader1.classList.add("opacity-none");
+      bannerHeader2.classList.remove("opacity-none");
     }, 2000);
 
     setTimeout(() => {
-      bannerHeader2.classList.add("display-none");
-      bannerHeader3.classList.remove("display-none");
+      bannerHeader2.classList.add("opacity-none");
+      bannerHeader3.classList.remove("opacity-none");
     }, 4000);
 
     setTimeout(() => {
-      bannerHeader3.classList.add("display-none");
+      bannerHeader3.classList.add("opacity-none");
     }, 6000);
   };
 

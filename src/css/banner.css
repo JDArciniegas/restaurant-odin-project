@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0px;
 }
 
 #banner-text-container{
@@ -29,7 +30,7 @@ h3 {
 }
 
 #mainText {
-  align-self: flex-end;
+  align-self: center;
   font-family: var(--second-font);
   color: var(--white);
   font-size: 60px;
@@ -40,7 +41,7 @@ h3 {
   border-width: 5px;
 }
 
-.display-none {
+.opacity-none {
   opacity: 0;
 }
 
