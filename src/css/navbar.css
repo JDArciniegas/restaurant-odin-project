@@ -2,7 +2,7 @@ ul{
   background-color: var(--midnight-green);
   display: flex;
   margin-top: 0;
-  color: var(--verdigris);
+  color: var(--amber);
 }
 
 #nav-container {
@@ -20,12 +20,12 @@ ul{
   list-style: none;
   text-transform: capitalize;
   line-height: 25px;
-  padding: 0 15px;
-  margin: 0 5px;
+  margin: 0 15px;
   transition: font-size 0.25s;
+  border-bottom: 4px double transparent;
 }
 
 .nav-item:hover{
   font-size: 1.1rem;
-  background-color: blue;
+  border-bottom: 4px double var(--verdigris);
 }
