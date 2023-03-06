@@ -1,4 +1,3 @@
-const content = document.getElementById("content");
 
 const home = () => {
   // banner container
