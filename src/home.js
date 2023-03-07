@@ -49,6 +49,8 @@ const home = () => {
     bannerContent.appendChild(mainBannerText);
   };
 
+  const mainContent = document.getElementById('mainContent');
+
   updateBannerText();
   setTimeout(() => {
     displayTextBanner();

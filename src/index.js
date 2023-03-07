@@ -59,10 +59,13 @@ const navBar = () => {
   navItemContainer.appendChild(menuNav);
   navItemContainer.appendChild(contactNav);
   navBarContainer.appendChild(navItemContainer);
+  mainContent.appendChild(home());
+
   return navBarContainer;
 };
 
 const loadPage = () => {
+  home();
   const content = document.getElementById("content");
   content.appendChild(navBar());
   content.appendChild(mainContent);
