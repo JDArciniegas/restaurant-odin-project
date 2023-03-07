@@ -1,9 +1,41 @@
-
+const menuItems = {
+  dish1: {
+    name: "steak",
+    price: "$47.99",
+    imageUrl: "../src/steak.jpg",
+  },
+  dish2: {
+    name: "ramen",
+    price: "18.99",
+    imageUrl: "../src/ramen.jpg",
+  },
+  dish3: {
+    name: "nachos",
+    price: "21.99",
+    imageUrl: "../src/nachos.jpg",
+  },
+  dish4: {
+    name: "cheesecake",
+    price: "14.99",
+    imageUrl: "../src/cheesecake.jpg",
+  },
+  dish5: {
+    name: "salmon salad",
+    price: "18.99",
+    imageUrl: "../src/salmon-salad.jpg",
+  },
+  dish6: {
+    name: "burger",
+    price: "28.99",
+    imageUrl: "../src/burger.jpg",
+  },
+};
 
 const createDish = (dishName, dishPrice, dishImage) => {
-  // create card
   let card = document.createElement("div");
   card.classList.add("card");
+  // create card
+  card.style.background = `url(${dishImage}) no-repeat center`;
   // card title
   let cardTitle = document.createElement("h4");
   cardTitle.classList.add("card-title");
@@ -13,44 +45,29 @@ const createDish = (dishName, dishPrice, dishImage) => {
   cardPrice.classList.add("card-price");
   cardPrice.textContent = dishPrice;
 
-  let cardImage= document.createElement('img');
-  cardImage.setAttribute("src", dishImage );
-  cardImage.classList.add("card-image");
-
-  let cardText = document.createElement('div');
-  cardText.classList.add('card-text');;
+  let cardText = document.createElement("div");
+  cardText.classList.add("card-text");
 
   cardText.appendChild(cardTitle);
   cardText.appendChild(cardPrice);
-  card.appendChild(cardImage);
   card.appendChild(cardText);
 
   return card;
-}
+};
 
 const menu = () => {
   // create container
   const menuContainer = document.createElement("div");
+  const menuHeader = document.createElement("h2");
   menuContainer.setAttribute("id", "menu-container");
 
-menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);
-menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);
-menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);
-menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);
-menuContainer.appendChild(
-  createDish("sheperd's pie", "$25", "../src/ShepherdsPie.jpeg")
-);
+  Object.values(menuItems).forEach((dish) => {
+    menuContainer.appendChild(
+      createDish(dish.name, dish.price, dish.imageUrl)
+    );
+  })
+
   return menuContainer;
-}
+};
 
 export default menu;

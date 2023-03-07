@@ -1,35 +1,41 @@
 #menu-container {
   width: 100%;
+  height: 100%;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: 300px 300px 300px;
+  margin-top: 50px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: var(--amber);
   color: var(--midnight-green);
   border-radius: 10px;
-  margin: 25px;
-  width: 350px;
+  margin: 30px 10px;
+  width: 500px;
+  background-size: contain;
 }
 
 .card-tile {
   background-color: none;
 }
 
-.card-image{
+.card-image {
   border-radius: 10px 10px 0 0;
+  height: inherit;
 }
 
-.card-text{
+.card-text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 3px 10px;
   text-transform: capitalize;
+  background-color: var(--amber);
+  margin-top: auto;
+  border-radius: 0 0 10px 10px;;
 }
-
-
