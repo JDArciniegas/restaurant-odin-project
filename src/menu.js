@@ -59,14 +59,20 @@ const menu = () => {
   // create container
   const menuContainer = document.createElement("div");
   const menuHeader = document.createElement("h2");
+  menuHeader.textContent = "Our Menu"
+
+  const cardsContainer = document.createElement("div");
+  menuContainer.appendChild(menuHeader);
+  cardsContainer.setAttribute("id", "cards-container");
+
   menuContainer.setAttribute("id", "menu-container");
 
   Object.values(menuItems).forEach((dish) => {
-    menuContainer.appendChild(
+    cardsContainer.appendChild(
       createDish(dish.name, dish.price, dish.imageUrl)
     );
   })
-
+  menuContainer.appendChild(cardsContainer);
   return menuContainer;
 };
 
