@@ -11,13 +11,10 @@
 #banner-text-container{
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
-  justify-content: space-evenly;
-  height: 60%;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 40px;
   background-color: var(--background);
   padding: 15px 25px;
   width: 200px;
@@ -30,14 +27,13 @@ h3 {
 }
 
 #mainText {
-  align-self: center;
   font-family: var(--second-font);
   color: var(--white);
-  font-size: 60px;
+  font-size: 50px;
   background-color: var(--background);
   border-style: none none double none;
   border-color: var(--amber);
-  padding: 25px 120px;
+  padding: 15px 25px;
   border-width: 5px;
 }
 

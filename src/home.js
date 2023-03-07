@@ -1,4 +1,3 @@
-
 const home = () => {
   // banner container
   // banner contains url for image in css
@@ -13,20 +12,20 @@ const home = () => {
 
   const bannerHeader1 = document.createElement("h3");
   bannerHeader1.innerHTML = `Eat<span class="endPeriod">${endPeriod.textContent}</span>`;
+  bannerTextContainer.appendChild(bannerHeader1);
 
   const bannerHeader2 = document.createElement("h3");
   bannerHeader2.classList.add("opacity-none");
+  bannerTextContainer.appendChild(bannerHeader2);
   bannerHeader2.innerHTML = `Play<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   const bannerHeader3 = document.createElement("h3");
+  bannerTextContainer.appendChild(bannerHeader3);
   bannerHeader3.classList.add("opacity-none");
   bannerHeader3.innerHTML = `Live<span class="endPeriod">${endPeriod.textContent}</span>`;
 
   // create time delay fucntion
   const updateBannerText = () => {
-    bannerTextContainer.appendChild(bannerHeader1);
-    bannerTextContainer.appendChild(bannerHeader2);
-    bannerTextContainer.appendChild(bannerHeader3);
     setTimeout(() => {
       bannerHeader1.classList.add("opacity-none");
       bannerHeader2.classList.remove("opacity-none");
@@ -49,7 +48,7 @@ const home = () => {
     bannerContent.appendChild(mainBannerText);
   };
 
-  const mainContent = document.getElementById('mainContent');
+  const mainContent = document.getElementById("mainContent");
 
   updateBannerText();
   setTimeout(() => {
