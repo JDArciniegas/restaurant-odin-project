@@ -1,0 +1,32 @@
+ul {
+  display: flex;
+  width: 100%;
+  background-color: var(--midnight-green);
+  margin: 0;
+  color: var(--amber);
+  height: 60px;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  float: right;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.nav-item {
+  list-style: none;
+  text-transform: capitalize;
+  line-height: 30px;
+  margin: 0 50px;
+  transition: font-size 0.25s;
+  border-bottom: 4px double transparent;
+}
+
+.nav-item:hover {
+  font-size: 1.1rem;
+  border-bottom: 4px double var(--verdigris);
+}

@@ -1,0 +1,46 @@
+#banner {
+  background: url('/src/images/restaurant.jpg') no-repeat left fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#banner-text-container{
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 40px;
+  background-color: var(--background);
+  padding: 15px 25px;
+  width: 200px;
+  border-style: none none double none;
+  transition: opacity 0.25s;
+  border-radius: 0 2px 2px 0;
+  border-width: 5px;
+  border-color: var(--amber);
+  color: var(--white);
+}
+
+#mainText {
+  font-family: var(--second-font);
+  color: var(--white);
+  font-size: 50px;
+  background-color: var(--background);
+  border-style: none none double none;
+  border-color: var(--amber);
+  padding: 15px 25px;
+  border-width: 5px;
+}
+
+.opacity-none {
+  opacity: 0;
+}
+
+.endPeriod {
+  color: var(--amber)
+}
