@@ -1,8 +1,8 @@
 import "./css/styles.css";
-import "./css/banner.css";
-import "./css/navbar.css";
-import "./css/menu.css";
-import "./css/contact.css";
+// import "./css/banner.css";
+// import "./css/navbar.css";
+// import "./css/menu.css";
+// import "./css/contact.css";
 import home from "./home";
 import menu from "./menu";
 import contact from "./contact";
