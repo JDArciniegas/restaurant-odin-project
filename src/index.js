@@ -1,4 +1,9 @@
 
+import "../src/css/styles.css";
+import "../src/css/navbar.css";
+import "../src/css/menu.css";
+import "../src/css/contact.css";
+import "../src/css/banner.css";
 import home from "./home";
 import menu from "./menu";
 import contact from "./contact";
