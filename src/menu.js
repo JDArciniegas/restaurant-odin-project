@@ -2,32 +2,32 @@ const menuItems = {
   dish1: {
     name: "steak",
     price: "$47.99",
-    imageUrl: "./images/steak.jpg",
+    imageUrl: "dist/images/steak.jpg",
   },
   dish2: {
     name: "ramen",
     price: "18.99",
-    imageUrl: "./images/ramen.jpg",
+    imageUrl: "dist/images/ramen.jpg",
   },
   dish3: {
     name: "nachos",
     price: "21.99",
-    imageUrl: "./images/nachos.jpg",
+    imageUrl: "dist/images/nachos.jpg",
   },
   dish4: {
     name: "cheesecake",
     price: "14.99",
-    imageUrl: "./images/cheesecake.jpg",
+    imageUrl: "dist/images/cheesecake.jpg",
   },
   dish5: {
     name: "salmon salad",
     price: "18.99",
-    imageUrl: "./images/salmon-salad.jpg",
+    imageUrl: "dist/images/salmon-salad.jpg",
   },
   dish6: {
     name: "burger",
     price: "28.99",
-    imageUrl: "./images/burger.jpg",
+    imageUrl: "dist/images/burger.jpg",
   },
 };
 
